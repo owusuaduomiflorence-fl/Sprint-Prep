@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprint Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="todo-container">
+      <header>
+        <h1>My Task List</h1>
+        <p>Keep track of your Women Techsters sprint goals.</p>
+      </header>
+
+      <form id="todo-form">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Add a new task..."
+          required
+        />
+        <button type="submit" id="add-btn">Add Task</button>
+      </form>
+
+      <ul id="todo-list">
+        <!-- Tasks will be added here dynamically -->
+      </ul>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
