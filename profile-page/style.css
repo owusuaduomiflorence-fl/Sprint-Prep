@@ -2,25 +2,26 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f4f6f8;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  color: #333;
 }
 
 .profile-card {
   background: #ffffff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   text-align: center;
-  max-width: 380px;
-  width: 100%;
+  max-width: 420px;
+  width: 90%;
 }
 
 .avatar {
@@ -28,67 +29,72 @@ body {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto 1rem auto;
-  display: block;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-  color: #2c3e50;
-  font-size: 1.5rem;
-  margin-bottom: 0.25rem;
+#name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.4rem;
 }
 
 .title {
-  color: #007bff;
-  font-weight: 600;
   font-size: 0.95rem;
+  font-weight: 600;
+  color: #0284c7;
   margin-bottom: 1rem;
+  line-height: 1.4;
 }
 
 .bio {
-  color: #555555;
-  font-size: 0.9rem;
-  line-height: 1.4;
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.6;
   margin-bottom: 1.5rem;
 }
 
 .links {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .btn {
   display: inline-block;
+  padding: 0.6rem 1.4rem;
+  background-color: #e2e8f0;
+  color: #334155;
   text-decoration: none;
-  background-color: #f0f0f0;
-  color: #333;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-weight: 500;
-  transition: background 0.2s ease;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
 }
 
 .btn:hover {
-  background-color: #e0e0e0;
+  background-color: #cbd5e1;
 }
 
-button#greet-btn {
-  background-color: #007bff;
-  color: #ffffff;
+#greet-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007ebd;
+  color: white;
   border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.9rem;
+  border-radius: 8px;
+  font-size: 1rem;
   font-weight: 600;
-  transition: background 0.2s ease;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-button#greet-btn:hover {
-  background-color: #0056b3;
+#greet-btn:hover {
+  background-color: #006699;
 }
 
 #greeting-message {
   margin-top: 1rem;
   font-weight: 600;
-  color: #28a745;
+  color: #0f766e;
+  font-size: 0.95rem;
 }
